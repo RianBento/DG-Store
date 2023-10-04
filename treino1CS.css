@@ -1,0 +1,141 @@
+body{
+    margin: 0px;
+    background-color: #E2E0E3 ;
+}
+
+div, header{
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background-color: #1E1F20;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.tituloHomeDG{
+    font-size: 35px;
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 3px;
+    color: azure;
+}
+
+span{
+    color: #A981CA;
+    letter-spacing: 0px;
+}
+
+.carrinho{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+
+.corpoHome{
+    flex: 1;
+    justify-content: center;    
+}
+
+.bannerBlack{
+
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+} 
+
+
+img{ 
+    max-width: 100%;
+    height: auto;
+}
+
+.ofertasImg, .freteImg{
+
+    width: 381px;
+    height: 201px; 
+    margin: 25px;
+}
+
+.prodVendas{
+    width: 100%;
+    border: solid blue 2px;
+    
+}
+
+@media (max-width: 450px){
+    .cabecalho{
+        height: 35px;
+    }
+
+    .menu, .carrinho{
+        width: 20px;
+        height: 20px;
+    }
+
+    .tituloHomeDG, span{
+        font-size: 25px;
+        color:aqua;
+    }
+    .bannerBlack{
+        width: 320px;
+    }
+    .ofertasImg, .freteImg{
+        width: 130px;
+        height: 50px;
+        /* border: solid peru 2px; */
+        margin: 10px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 850px){
+    .cabecalho{
+        height: 40px;
+    }
+    .tituloHomeDG, span{
+        color: yellow;
+        font-size: 25px;
+    }
+    .menu, .carrinho{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .bannerBlack{
+        width: 600px;
+    }
+    
+    .ofertasImg, .freteImg{
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 950px){
+    .cabecalho{
+        height: 40px;
+    }
+
+    .tituloHomeDG, span{
+        color:chartreuse;
+        font-size: 25px;
+    }
+
+    .bannerBlack{
+        width: 680px;
+    }
+
+    .freteImg,.ofertasImg{
+        width: 220px;
+        height: 80px;
+    }
+}
